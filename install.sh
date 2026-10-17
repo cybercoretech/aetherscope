@@ -6,7 +6,7 @@
 # Supported: Linux (x86_64, aarch64) and macOS (x86_64, aarch64).
 set -eu
 
-REPO="cybercore-tech/aetherscope"
+REPO="cybercoretech/aetherscope"
 INSTALL_DIR="${AETHERSCOPE_INSTALL_DIR:-$HOME/.local/bin}"
 
 die() {
