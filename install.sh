@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # Install AetherScope + Proteus from the latest GitHub release.
 #
-#   curl -fsSL https://raw.githubusercontent.com/cybercore-tech/aetherscope/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/cybercoretech/aetherscope/main/install.sh | sh
 #
 # Supported: Linux (x86_64, aarch64) and macOS (x86_64, aarch64).
 set -eu
 
-REPO="cybercore-tech/aetherscope"
+REPO="cybercoretech/aetherscope"
 INSTALL_DIR="${AETHERSCOPE_INSTALL_DIR:-$HOME/.local/bin}"
 
 die() {
@@ -84,7 +84,7 @@ if ! "${INSTALL_DIR}/aetherscope" --list-interfaces >/dev/null 2>"${tmp_dir}/run
     echo "On distros that only ship the modern \"libpcap.so.1\" name (Arch,"
     echo "Fedora, and others), the safest fix is building from source instead"
     echo "-- it links against whatever libpcap you actually have:"
-    echo "  git clone https://github.com/cybercore-tech/aetherscope && cd aetherscope"
+    echo "  git clone https://github.com/cybercoretech/aetherscope && cd aetherscope"
     echo "  cargo build --release   # binaries land in target/release/"
     echo "(macOS ships libpcap in the base system -- this shouldn't happen there.)"
   fi

@@ -279,7 +279,7 @@
     <div class="navlinks">
       <a class="navlink" href="#proteus">Proteus</a>
       <a class="navlink" href="#install">Install</a>
-      <a class="navlink btn btn-ghost" style="padding:6px 14px;font-size:11px;" href="https://github.com/cybercore-tech/aetherscope" target="_blank" rel="noopener">GitHub</a>
+      <a class="navlink btn btn-ghost" style="padding:6px 14px;font-size:11px;" href="https://github.com/cybercoretech/aetherscope" target="_blank" rel="noopener">GitHub</a>
     </div>
   </div>
 </nav>
@@ -301,7 +301,7 @@
           <p class="desc">Same category as <code>tcpdump</code>/Wireshark. Not a proxy like WraithFlow — this sits directly on an interface and sees everything crossing it: TCP, UDP, ICMP, ARP, anything, not just traffic you've deliberately routed through a pipeline.</p>
           <div class="id-actions">
             <a class="btn btn-primary" href="#install">Install</a>
-            <a class="btn btn-ghost" href="https://github.com/cybercore-tech/aetherscope" target="_blank" rel="noopener">Source</a>
+            <a class="btn btn-ghost" href="https://github.com/cybercoretech/aetherscope" target="_blank" rel="noopener">Source</a>
           </div>
           <div class="tag-row">
             <span class="tag">bpf filters</span>
@@ -412,14 +412,14 @@
       </div>
       <div class="cmd-row">
         <span class="prompt">&gt;_</span>
-        <code id="as-cmd">curl -fsSL https://raw.githubusercontent.com/cybercore-tech/aetherscope/main/install.sh | sh</code>
+        <code id="as-cmd">curl -fsSL https://raw.githubusercontent.com/cybercoretech/aetherscope/main/install.sh | sh</code>
         <button class="copy-btn" onclick="asCopy(this)" aria-label="Copy command">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
         </button>
       </div>
       <p class="install-note">Installs both <code>aetherscope</code> and <code>proteus</code>. Needs root or <code>CAP_NET_RAW</code> to open a capture device — <code>--list-interfaces</code> works unprivileged. Note: <code>sudo</code> resets PATH, so a bare <code>sudo aetherscope</code> may say "command not found" even though it's installed — use <code>sudo env "PATH=$PATH" aetherscope ...</code>.</p>
       <div class="install-more">
-        <a href="https://github.com/cybercore-tech/aetherscope#-aetherscope-cli" target="_blank" rel="noopener">More install options &amp; manual builds →</a>
+        <a href="https://github.com/cybercoretech/aetherscope#-aetherscope-cli" target="_blank" rel="noopener">More install options &amp; manual builds →</a>
       </div>
     </div>
   </div>
@@ -432,8 +432,8 @@
       <span>AetherScope · MIT licensed</span>
     </div>
     <div class="foot-links">
-      <a href="https://github.com/cybercore-tech/aetherscope" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://github.com/cybercore-tech/aetherscope/releases" target="_blank" rel="noopener">Releases</a>
+      <a href="https://github.com/cybercoretech/aetherscope" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/cybercoretech/aetherscope/releases" target="_blank" rel="noopener">Releases</a>
       <a href="#install">Install</a>
     </div>
     <div class="foot-family">Cybercore family</div>
@@ -442,8 +442,8 @@
 
 <script>
   const CMDS = {
-    linux: 'curl -fsSL https://raw.githubusercontent.com/cybercore-tech/aetherscope/main/install.sh | sh',
-    macos: 'curl -fsSL https://raw.githubusercontent.com/cybercore-tech/aetherscope/main/install.sh | sh'
+    linux: 'curl -fsSL https://raw.githubusercontent.com/cybercoretech/aetherscope/main/install.sh | sh',
+    macos: 'curl -fsSL https://raw.githubusercontent.com/cybercoretech/aetherscope/main/install.sh | sh'
   };
   function asSetOs(os) {
     document.querySelectorAll('.os-tab').forEach(t => t.classList.toggle('active', t.dataset.os === os));
