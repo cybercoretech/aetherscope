@@ -2,8 +2,8 @@
   <img src="assets/aetherscope-brand/aetherscope-hero.svg" alt="AetherScope — packet capture and protocol inspection" width="820">
 </p>
 
-[![CI](https://github.com/cybercore-tech/aetherscope/actions/workflows/ci.yml/badge.svg)](https://github.com/cybercore-tech/aetherscope/actions/workflows/ci.yml)
-[![Release](https://github.com/cybercore-tech/aetherscope/actions/workflows/release.yml/badge.svg)](https://github.com/cybercore-tech/aetherscope/actions/workflows/release.yml)
+[![CI](https://github.com/cybercoretech/aetherscope/actions/workflows/ci.yml/badge.svg)](https://github.com/cybercoretech/aetherscope/actions/workflows/ci.yml)
+[![Release](https://github.com/cybercoretech/aetherscope/actions/workflows/release.yml/badge.svg)](https://github.com/cybercoretech/aetherscope/actions/workflows/release.yml)
 
 # 🔭 AetherScope · 🐙 Proteus
 
@@ -12,7 +12,7 @@
 ## 📦 Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/cybercore-tech/aetherscope/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/cybercoretech/aetherscope/main/install.sh | sh
 ```
 
 Downloads the latest release for your platform (Linux or macOS, x86_64
@@ -32,7 +32,7 @@ or aarch64), verifies its SHA-256 checksum, and installs both
 
 **Packet capture and protocol inspection on your own interfaces** — the
 same category of tool as `tcpdump`/Wireshark. Not a proxy like
-[WraithFlow](https://github.com/cybercore-tech/wraithflow) — that only sees
+[WraithFlow](https://github.com/cybercoretech/wraithflow) — that only sees
 traffic explicitly routed through one of its pipelines. This sits directly
 on a network interface and sees everything crossing it: UDP, ICMP, ARP,
 any TCP connection, not just the ones you've deliberately proxied.
