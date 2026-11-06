@@ -268,6 +268,61 @@
     .foot-brand { font-size: 11px; }
   }
 </style>
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <style>
+    cybercore-theme-chooser{--ccx-bg:color-mix(in srgb,var(--void) 90%,var(--white));--ccx-fg:var(--white);--ccx-line:var(--grid-line);--ccx-accent:var(--coldblue);--ccx-focus:var(--coldblue);--ccx-field:var(--void);--ccx-muted:var(--muted);--ccx-button-bg:transparent;--ccx-button-border:var(--grid-line);--ccx-radius:8px;--ccx-button-width:auto;--ccx-height:2.25rem;--ccx-glow:.5;}
+  </style>  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  div.status-pill,
+  a.navlink.btn.btn-ghost,
+  span.panel-label,
+  span.tag,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  span.panel-label,
+  span.tag,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  span.panel-label,
+  span.tag,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (pointer: coarse) {
+  div.foot-links > a { min-height: 24px; min-width: 24px; }
+  div.install-more > a { display: inline-flex; align-items: center; min-height: 24px; min-width: 24px; }
+}
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  #as-cmd { font-size: 11px !important; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+}
+  </style>
+
+
+
+
+
+
+
+
+
+
+  <script>window.SITE = Object.assign(window.SITE || {}, {"siteLabel": "Aetherscope", "themeVars": {"bg": "--void", "white": "--white", "line": "--grid-line", "muted": "--muted", "cyan": "--coldblue", "orange": "--amber", "red": "--lockred"}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+
 
 <nav>
   <div class="wrap">
@@ -279,10 +334,10 @@
     <div class="navlinks">
       <a class="navlink" href="#proteus">Proteus</a>
       <a class="navlink" href="#install">Install</a>
+      <a class="navlink" data-cybercore-master-docs href="https://cybercoretech.github.io/cybercore/docs.html">Master docs ↗</a>
       <a class="navlink btn btn-ghost" style="padding:6px 14px;font-size:11px;" href="https://github.com/cybercoretech/aetherscope" target="_blank" rel="noopener">GitHub</a>
-    </div>
-  </div>
-<a data-cybercore-master-docs href="https://cybercoretech.github.io/cybercore/docs.html" style="color:#22e6ff;border:1px solid #263454;border-radius:999px;padding:7px 12px;text-decoration:none;font:600 .7rem ui-monospace,monospace;letter-spacing:.08em;white-space:nowrap">MASTER DOCS ↗</a></nav>
+    <cybercore-theme-chooser match=".navlink"></cybercore-theme-chooser></div>
+  </div></nav>
 
 <main class="dash">
   <div class="wrap">
